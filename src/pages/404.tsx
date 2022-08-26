@@ -7,6 +7,7 @@ import Link from "next/link";
 function ErrorPage() {
   const { t } = useTranslation("404_page");
   console.log(123);
+  console.log(456);
   
   return (
     <div className="relative w-full min-h-screen flex items-center">

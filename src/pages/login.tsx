@@ -26,6 +26,8 @@ const isDev = process.env.NODE_ENV === "development";
 
 const LoginPage: NextPage<LoginPageProps> = ({ quotes }) => {
   const randomQuote = useMemo(() => randomElement(quotes), [quotes]);
+  console.log(randomQuote);
+  
   const { t } = useTranslation("login");
 
   const signInMutation = useSignIn({

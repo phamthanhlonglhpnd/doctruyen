@@ -5,7 +5,7 @@ const breakpoints = {
   1536: {
     items: 7,
   },
-  1280: {
+  128: {
     items: 6,
   },
   1024: {

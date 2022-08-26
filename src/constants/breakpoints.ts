@@ -1,4 +1,7 @@
 const breakpoints = {
+  1900: {
+    items: 8,
+  },
   1536: {
     items: 7,
   },

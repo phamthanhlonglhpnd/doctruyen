@@ -8,7 +8,8 @@ import { useQuery } from "react-query";
 
 const useAnimeRecommendedList = () => {
   const { user } = useUser();
-
+  console.log(user);
+  
   return useQuery<Watched>(
     ["anime", "recommended"],
     async () => {

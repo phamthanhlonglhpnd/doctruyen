@@ -40,7 +40,7 @@ interface WorkaroundAppProps extends AppProps {
 
 function App({ Component, pageProps, router, err }: WorkaroundAppProps) {
   const [errorInfo, setErrorInfo] = useState<React.ErrorInfo>(null);
-
+  console.log(errorInfo);
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);

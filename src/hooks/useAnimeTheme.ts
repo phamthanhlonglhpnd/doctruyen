@@ -131,6 +131,7 @@ export const fetchRandomTheme = async () => {
   const { data } = await axios.get<AnimeThemeAPI.RandomThemeResponse>(
     "https://api.animethemes.moe/anime?sort=random&page[size]=1&include=animethemes.animethemeentries"
   );
+  console.log(data);
 
   return composeTheme(data.anime[0]);
 };
@@ -139,6 +140,7 @@ const fetchThemeByAnime = async (slug: string, type: string) => {
   const { data } = await axios.get<AnimeThemeAPI.ThemeResponse>(
     `https://api.animethemes.moe/anime/${slug}?include=animethemes.animethemeentries.videos,animethemes.song,resources&filter[site]=Anilist&fields[resource]=external_id`
   );
+  console.log(data);
 
   const theme: AnimeThemeAPI.Animetheme = data.anime.animethemes.find(
     (theme) => theme.slug === type

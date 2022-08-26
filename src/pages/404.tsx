@@ -6,7 +6,8 @@ import Link from "next/link";
 
 function ErrorPage() {
   const { t } = useTranslation("404_page");
-
+  console.log(123);
+  
   return (
     <div className="relative w-full min-h-screen flex items-center">
       <Head title={`${t("error_title")} - Kaguya`} />

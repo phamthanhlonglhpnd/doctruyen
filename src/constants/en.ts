@@ -31,6 +31,7 @@ export const FORMATS = [
   { value: MediaFormat.Ona, label: "ONA" },
   { value: MediaFormat.Music, label: "Music" },
   { value: MediaFormat.Manga, label: "Manga" },
+  { value: MediaFormat.Manga, label: "Comics" },
 ];
 
 export const ANIME_SORTS = [

@@ -15,6 +15,7 @@ const ThemePlayerContext = React.createContext<ContextProps>(null);
 
 export const ThemePlayerContextProvider: React.FC<ThemePlayerContextProviderProps> =
   ({ children, value }) => {
+    console.log('update theme context')
     return (
       <ThemePlayerContext.Provider value={value}>
         {children}

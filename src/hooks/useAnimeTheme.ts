@@ -110,7 +110,7 @@ const composeTheme = (
   theme = randomElement(anime.animethemes)
 ): AnimeTheme => {
   const entry = randomElement(theme.animethemeentries);
-
+  console.log('update hook')
   return {
     episode: entry.episodes,
     name: anime.name,

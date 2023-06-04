@@ -7,6 +7,8 @@ const useBreakpoint = (
 ) => {
   const [width, setWidth] = useState(0);
 
+  console.log('update break point hook')
+
   useEffect(() => {
     setWidth(element ? element.clientWidth : window.innerWidth);
 

@@ -17,6 +17,7 @@ const query = `
 `;
 
 const useChapters = (mediaId: number) => {
+  console.log('update chapter hook')
   const { data, isLoading, ...rest } = useSupabaseQuery(
     ["chapters", mediaId],
     () =>

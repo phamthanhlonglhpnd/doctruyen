@@ -47,6 +47,8 @@ const DetailsPage: NextPage<DetailsPageProps> = ({ manga }) => {
     [manga, locale]
   );
 
+  console.log('add lablel data');
+
   return (
     <>
       <Head
